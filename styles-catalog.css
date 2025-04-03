@@ -167,6 +167,10 @@ body {
  filter: brightness(0.4);
 }
 
+.n:hover img {
+  filter:brightness(0.9);
+}
+
 .product-info {
  padding: 0 16px;
  height: 30%;
