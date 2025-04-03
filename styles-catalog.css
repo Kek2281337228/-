@@ -261,3 +261,72 @@ body {
 .contacts-section a:hover {
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .header-left-group {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .logo {
+      width: 48px;
+    }
+  
+    .company-name {
+      font-size: 20px;
+    }
+  
+    .category {
+      padding: 20px;
+    }
+  
+    .category-title {
+      font-size: 20px;
+      padding-left: 10px;
+      text-align: center;
+    }
+  
+    .carousel-wrapper {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .carousel {
+      gap: 20px;
+      justify-content: flex-start;
+    }
+  
+    .product-card {
+      width: 90vw;
+      height: auto;
+    }
+  
+    .product-info {
+      padding: 10px;
+    }
+  
+    .scroll-btn {
+      width: 36px;
+      height: 36px;
+      font-size: 18px;
+    }
+  
+    .contacts-section {
+      padding: 40px 20px;
+    }
+  
+    .contacts-section h2 {
+      font-size: 22px;
+    }
+  
+    .contacts-section p {
+      font-size: 14px;
+    }
+  }
+  
