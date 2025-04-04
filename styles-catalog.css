@@ -343,3 +343,19 @@ body {
       font-size: 14px;
     }
 }
+
+function scrollLeftCarousel(button) {
+    const carousel = button.parentElement.querySelector('.carousel');
+    const cardWidth = 370;
+    const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+    const target = Math.max(0, carousel.scrollLeft - cardWidth);
+    carousel.scrollTo({ left: target, behavior: 'smooth' });
+}
+
+function scrollRightCarousel(button) {
+    const carousel = button.parentElement.querySelector('.carousel');
+    const cardWidth = 370;
+    const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+    const target = Math.min(maxScroll, carousel.scrollLeft + cardWidth);
+    carousel.scrollTo({ left: target, behavior: 'smooth' });
+}
