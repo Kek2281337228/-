@@ -3,23 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kartel Impex – Каталог</title>
+  <title>Каталог</title>
   <link rel="stylesheet" href="styles-catalog.css" />
 
 </head>
 <body>
 
  <header>
-  <div class="header-left-group">
-   <!-- ЛОГОТИП МАЛЕНЬКОГО РАЗМЕРА -->
-   <a href="C:\kartelimpex\KARTELIMPEX\index.html" class="logo-container">
-   
-   <!-- НАЗВАНИЕ КОМПАНИИ -->
-   </a>
+ <div class="header-left-group">
+  <!-- ЛОГОТИП МАЛЕНЬКОГО РАЗМЕРА -->
+  <a href="C:\kartelimpex\KARTELIMPEX\index.html" class="logo-container">
+  
+  <!-- НАЗВАНИЕ КОМПАНИИ -->
+  </a>
+ </div>
+ <div class="header-left-group" style="justify-content: center; width: 100%;">
+  <span class="company-name">Иранская продукция</span>
+</div>
+ <div class="header-nav" style="display: flex; gap: 20px;">
+   <a href="#appliances" style="color: #f0f0f0; text-decoration: none; font-weight: 500;">Бытовая Техника</a>
+   <a href="#chemicals" style="color: #f0f0f0; text-decoration: none; font-weight: 500;">Бытовая Химия</a>
  </div>
 </header>
 
-<section class="category">
+<section class="category"  id="appliances">
  <h2 class="category-title">Духовые шкафы</h2>
  <div class="carousel-wrapper">
  <button class="scroll-btn left" onclick="scrollLeftCarousel(this)">←</button>
@@ -436,7 +443,7 @@
 </section>
 
 </section>
-<section class="category">
+<section class="category"  id="chemicals">
  <h2 class="category-title">Гель для стирки Dogol</h2>
  <div class="carousel-wrapper">
   <button class="scroll-btn left" onclick="scrollLeftCarousel(this)">←</button>
