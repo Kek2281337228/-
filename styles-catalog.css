@@ -105,6 +105,7 @@ body {
  flex: 1;
  display: flex;
  gap: 30px;
+ overflow-y: hidden;
  overflow-x: auto;
  scroll-behavior: smooth;
  scrollbar-width: none;
