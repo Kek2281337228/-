@@ -167,10 +167,6 @@ body {
  filter: brightness(0.4);
 }
 
-.n:hover img {
-  filter:brightness(0.9);
-}
-
 .product-info {
  padding: 0 16px;
  height: 30%;
@@ -217,6 +213,12 @@ body {
  background: #444;
 }
 
+.scroll-btn.left,
+.scroll-btn.right {
+ position: static;
+ margin: 10px auto;
+}
+
 .scroll-btn.left {
  left: -18px;
 }
@@ -232,6 +234,10 @@ body {
  scroll-behavior: smooth;
  scrollbar-width: none;
  -ms-overflow-style: none;
+}
+
+.carousel {
+  width: 100%;
 }
 
 .carousel::-webkit-scrollbar {
@@ -298,6 +304,7 @@ body {
   
     .carousel-wrapper {
       flex-direction: column;
+      align-items: stretch;
       gap: 12px;
     }
   
@@ -319,6 +326,9 @@ body {
       width: 36px;
       height: 36px;
       font-size: 18px;
+      display: block;
+      position: relative;
+      margin: 0 auto;
     }
   
     .contacts-section {
@@ -332,5 +342,4 @@ body {
     .contacts-section p {
       font-size: 14px;
     }
-  }
-  
+}
